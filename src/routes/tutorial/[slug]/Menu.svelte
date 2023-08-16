@@ -74,6 +74,7 @@
 									transition:slide={{ duration }}
 								>
 									<button
+										style="width: 100%; text-align: start;"
 										on:click|stopPropagation={() => {
 											if (expanded_part !== part.slug) {
 												expanded_part = part.slug;
@@ -160,6 +161,8 @@
 
 		isolation: isolate;
 		z-index: 4;
+
+		user-select: none;
 	}
 
 	.container.dark {
